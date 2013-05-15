@@ -118,7 +118,7 @@ function isValidNumber(phone) {
 	try {
 		var phone = cleanPhone(phone);
 		var phoneUtil = i18n.phonenumbers.PhoneNumberUtil.getInstance();
-		var number = phoneUtil.parseAndKeepRawInput(phone, country);
+		var number = phoneUtil.parseAndKeepRawInput(phone, "");
 	    return phoneUtil.isValidNumber(number);
     } catch (e) {
     	return false;
