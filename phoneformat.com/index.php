@@ -418,7 +418,7 @@
 		</DIV>
 	</DIV>
 			<DIV ID="download" STYLE="margin-top: 20px">
-				<A HREF="js/PhoneFormat.js"><IMG SRC="images/download.png" WIDTH="303" HEIGHT="43" BORDER="0"></A>
+				<A HREF="https://github.com/albeebe/phoneformat.js"><IMG SRC="images/download.png" WIDTH="303" HEIGHT="43" BORDER="0"></A>
 			</DIV>
 			<DIV STYLE="margin-top:15px; font-size:10px;">
 			<A HREF="http://code.google.com/p/libphonenumber/">Built using Google's libphonenumber library.</A>
