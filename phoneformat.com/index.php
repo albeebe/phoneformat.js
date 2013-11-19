@@ -422,7 +422,7 @@
 			</DIV>
 			<DIV STYLE="margin-top:15px; font-size:10px;">
 			<A HREF="http://code.google.com/p/libphonenumber/">Built using Google's libphonenumber library.</A>
-			<A HREF="https://code.google.com/p/libphonenumber/source/browse/#svn%2Ftrunk%2Fjavascript%2Fi18n%2Fphonenumbers%253Fstate%253Dclosed">(r574 5/14/2013)</A>
+			<A HREF="https://code.google.com/p/libphonenumber/source/browse/#svn%2Ftrunk%2Fjavascript%2Fi18n%2Fphonenumbers%253Fstate%253Dclosed">(r622 11/19/2013)</A>
 			</DIV>
 			</TD>
 			<TD>
