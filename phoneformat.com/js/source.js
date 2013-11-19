@@ -1,5 +1,4 @@
 var defaultPhone = "";
-var country = "us";
 
 
 /* ************************************** */
@@ -64,7 +63,7 @@ function processPhone() {
 		$('#phone_country').html(countryCode + " - " + countryCodeToName(countryCode));
 	}
 	$('#phone_mobile_dial').html(formatNumberForMobileDialing(country, phone));
-	if (isValidNumber(phone)) {
+	if (isValidNumber(phone, country)) {
 		$('#phone_valid').html('Yes');
 	} else {
 		$('#phone_valid').html('No');
