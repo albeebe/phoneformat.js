@@ -242,6 +242,7 @@ function countryCodeToName(countryCode) {
 	arrCountry['AR'] = "Argentina";
 	arrCountry['AM'] = "Armenia";
 	arrCountry['AW'] = "Aruba";
+	arrCountry['AC'] = "Ascension Island";
 	arrCountry['AU'] = "Australia";
 	arrCountry['AT'] = "Austria";
 	arrCountry['AZ'] = "Azerbaijan";
@@ -291,7 +292,7 @@ function countryCodeToName(countryCode) {
 	arrCountry['DJ'] = "Djibouti";
 	arrCountry['DM'] = "Dominica";
 	arrCountry['DO'] = "Dominican Republic";
-	arrCountry['TP'] = "East Timor";
+	arrCountry['TL'] = "East Timor";
 	arrCountry['EC'] = "Ecuador";
 	arrCountry['EG'] = "Egypt";
 	arrCountry['SV'] = "El Salvador";
@@ -372,6 +373,7 @@ function countryCodeToName(countryCode) {
 	arrCountry['MD'] = "Moldova";
 	arrCountry['MC'] = "Monaco";
 	arrCountry['MN'] = "Mongolia";
+	arrCountry['ME'] = "Montenegro";
 	arrCountry['MS'] = "Montserrat";
 	arrCountry['MA'] = "Morocco";
 	arrCountry['MZ'] = "Mozambique";
@@ -394,6 +396,7 @@ function countryCodeToName(countryCode) {
 	arrCountry['OM'] = "Oman";
 	arrCountry['PK'] = "Pakistan";
 	arrCountry['PW'] = "Palau";
+	arrCountry['PS'] = "Palestine";
 	arrCountry['PA'] = "Panama";
 	arrCountry['PG'] = "Papua New Guinea";
 	arrCountry['PY'] = "Paraguay";
@@ -417,6 +420,7 @@ function countryCodeToName(countryCode) {
 	arrCountry['ST'] = "Sao Tome And Principe";
 	arrCountry['SA'] = "Saudi Arabia";
 	arrCountry['SN'] = "Senegal";
+	arrCountry['RS'] = "Serbia";
 	arrCountry['SC'] = "Seychelles";
 	arrCountry['SL'] = "Sierra Leone";
 	arrCountry['SG'] = "Singapore";
