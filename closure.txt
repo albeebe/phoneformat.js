@@ -66,22 +66,22 @@ function formatNumberForMobileDialing(country, phone) {
 }
 
 // -------------------------------------------------------------------------
-function isValidNumber(phone) {
-	/*
-	
-	Tests whether a phone number matches a valid pattern. Note this doesn't
-	verify the number is actually in use, which is impossible to tell by just
-	looking at a number itself.
-	
-	*/
-	
-	try {
-		var phone = cleanPhone(phone);
-		var phoneUtil = i18n.phonenumbers.PhoneNumberUtil.getInstance();
-		var number = phoneUtil.parseAndKeepRawInput(phone, "");
-	    return phoneUtil.isValidNumber(number);
+function isValidNumber(phone, country) {
+        /*
+        
+        Tests whether a phone number matches a valid pattern. Note this doesn't
+        verify the number is actually in use, which is impossible to tell by just
+        looking at a number itself.
+        
+        */
+        
+        try {
+                var phone = cleanPhone(phone);
+                var phoneUtil = i18n.phonenumbers.PhoneNumberUtil.getInstance();
+                var number = phoneUtil.parseAndKeepRawInput(phone, country);
+            return phoneUtil.isValidNumber(number);
     } catch (e) {
-    	return false;
+            return false;
     }
 }
 
