@@ -1,6 +1,6 @@
 // ==ClosureCompiler==
 // @compilation_level SIMPLE_OPTIMIZATIONS
-// @output_file_name default.js
+// @output_file_name phoneformat.js
 // @use_closure_library true
 // @code_url https://libphonenumber.googlecode.com/svn/trunk/javascript/i18n/phonenumbers/asyoutypeformatter.js
 // @code_url https://libphonenumber.googlecode.com/svn/trunk/javascript/i18n/phonenumbers/phonenumberutil.js
