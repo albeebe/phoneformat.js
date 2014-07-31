@@ -199,7 +199,45 @@ function formatLocal(country, phone) {
                 return formatInternational(country, phone);
         }
 }
-        
+    
+// -------------------------------------------------------------------------
+function exampleLandlineNumber(country) {
+        /*
+	
+        Returns an example land line phone number for the specified country
+	
+        country (String) 2 digit country code
+	
+        */
+	
+        try {
+                var phoneUtil = i18n.phonenumbers.PhoneNumberUtil.getInstance();
+                var output = phoneUtil.getExampleNumber(country);
+                return ""+output.getNationalNumber();
+        } catch (e) {
+                return "";
+        }
+}   
+
+// -------------------------------------------------------------------------
+function exampleMobileNumber(country) {
+        /*
+	
+        Returns an example mobile phone number for the specified country
+	
+        country (String) 2 digit country code
+	
+        */
+	
+        try {
+                var phoneUtil = i18n.phonenumbers.PhoneNumberUtil.getInstance();
+                var output = phoneUtil.getExampleNumberForType(country, i18n.phonenumbers.PhoneNumberType.MOBILE);
+                return ""+output.getNationalNumber();
+        } catch (e) {
+                return "";
+        }
+}
+
 // -------------------------------------------------------------------------
 function cleanPhone(phone) {
         /*
