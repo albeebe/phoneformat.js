@@ -21,12 +21,20 @@ Unfortunately I don't plan on updating this code very often.  More often then no
 
 The real beauty of PhoneFormat.js is that everything is compressed into just one file with some easy to use helper functions I created for you.  I'll show you how to generate PhoneFormat.js using the latest version of libphonenumber in only 3 simple steps!
 
+** Note: ** 
+The current project splits the generated file so we can autogenerate modules.  But, if you are just using the plain ol' javascripts, then you should be fine.
+
 **Step 1**
+
 - Copy to your clipboard, the contents of [closure.txt](https://github.com/albeebe/phoneformat.js/blob/master/closure.txt) at the top of this page
+
 **Step 2**
+
 - Go to Googles [Closure Compiler Service](http://closure-compiler.appspot.com/home)</a>
+
 **Step 3**
--Paste the contents of [closure.txt](https://github.com/albeebe/phoneformat.js/blob/master/closure.txt) into the big textarea on the left side of the screen under the **Compile** button.  
+
+- Paste the contents of [closure.txt](https://github.com/albeebe/phoneformat.js/blob/master/closure.txt) into the big textarea on the left side of the screen under the **Compile** button.  
 - Make sure you delete whatever text is already the textarea!
 - After you've pasted it press the **Compile** button
 - If everything works correctly, on the right side of the screen will be a freshly compiled PhoneFormat.js
