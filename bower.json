@@ -1,6 +1,6 @@
 {
-  "name": "phone-format",
-  "main": "dist/phoneformat.js",
+  "name": "phoneformat",
+  "main": "./dist/phoneformat.js",
   "version": "1.0.0",
   "homepage": "https://github.com/albeebe/phoneformat.js",
   "authors": [
@@ -14,7 +14,8 @@
     "node"
   ],
   "keywords": [
-    "PhoneFormatter"
+    "PhoneFormatter",
+    "PhoneValidator"
   ],
   "license": "MIT",
   "ignore": [
