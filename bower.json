@@ -1,6 +1,6 @@
 {
   "name": "phone-format",
-  "main": "phoneformat.js",
+  "main": "dist/phoneformat.js",
   "version": "1.0.0",
   "homepage": "https://github.com/albeebe/phoneformat.js",
   "authors": [
