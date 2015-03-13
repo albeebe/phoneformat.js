@@ -24,12 +24,13 @@
 
     // Concat definitions
     concat: {
-      options: {
-        separator: ';',
-      },
       basic_js: {
         src: ['lib/phone-format-interface.js', 'lib/google-libraries.js'],
         dest: 'dist/phone-format.js'
+      },
+      global_js: {
+        src: ['lib/google-libraries.js', 'lib/global-wrap-start.js', 'lib/phone-format-interface.js', 'lib/global-wrap-end.js'],
+        dest: 'dist/phone-format-global.js'
       },
       amd: {
         src: ['dist/phone-format-amd.js', 'lib/google-libraries.js'],
@@ -43,9 +44,21 @@
 
     // Minify definitions
     uglify: {
-      my_target: {
+      basic_js: {
         src: ['dist/phone-format.js'],
         dest: 'dist/phone-format.min.js'
+      },
+      global_js: {
+        src: ['dist/phone-format-global.js'],
+        dest: 'dist/phone-format-global.min.js'
+      },
+      amd: {
+        src: ['dist/phone-format-amd.js'],
+        dest: 'dist/phone-format-amd.min.js'
+      },
+      exports: {
+        src: ['dist/phone-format-exports.js'],
+        dest: 'dist/phone-format-exports.min.js'
       }
     }
 

@@ -1,29 +1,51 @@
 #PhoneFormat.js
 
 
-**Javascript Phone Number Formatter**
+####**A javascript phone formatter**
 
 
-###This is the phoneformat.js file from <a href="http://www.phoneformat.com">PhoneFormat.com</A>
 
+
+##API
+
+| Function                     	| Parameters                                 	| Example                                                                  	|   	|   	|
+|------------------------------	|--------------------------------------------	|--------------------------------------------------------------------------	|---	|---	|
+| countryForE164Number         	| phoneNumber : string                       	| phoneFormat.countryForE164Number(validInternationalPhoneNumber);         	|   	|   	|
+| formatNumberForMobileDialing 	| countryCode : string, phoneNumber : string 	| phoneFormat.formatNumberForMobileDialing(countryCode, validPhoneNumber); 	|   	|   	|
+| isValidNumber                	| phoneNumber : string, countryCode : string 	| phoneFormat.isValidNumber(validPhoneNumber, countryCode);                	|   	|   	|
+| formatE164                   	| countryCode: string, phoneNumber : string  	| phoneFormat.formatE164(countryCode, validPhoneNumber);                   	|   	|   	|
+| formatInternational          	| countryCode : string, phoneNumber : string 	| phoneFormat.formatInternational(countryCode, validPhoneNumber);          	|   	|   	|
+| formatLocal                  	| countryCode : string, phoneNumber : string 	| phoneFormat.formatLocal(countryCode, validPhoneNumber);                  	|   	|   	|
+| exampleLandlineNumber        	| countryCode : string                       	| phoneFormat.exampleLandlineNumber(countryCode);                          	|   	|   	|
+| exampleMobileNumber          	| countryCode : string                       	| phoneFormat.exampleMobileNumber(countryCode);                            	|   	|   	|
+| cleanPhone                   	| phoneNumber : string                       	| phoneFormat.cleanPhone(validPhoneNumber);                                	|   	|   	|
+| countryCodeToName            	| countryCode : string                       	|                                                                          	|   	|   	|
+  
 ##Install
 
 All files for usage are in the /dist directory.
 
-- **Amd**: phone-format-amd.js
-- **Exports**: phone-format-exports.js
-- **Plain Ol' Javascript**: phone-format.js or phone-format.min.js
+- **Amd**: 
+	- phone-format-amd.js or phone-format-amd.min.js
+- **Exports**: 
+	- phone-format-exports.js or phone-format-amd.min.js
+- **Global**: 
+	- phone-format-global.js or phone-format-global.min.js
+- **Original Blend**: 
+	- phone-format.js or phone-format.min.js
+	
+
+##DEMO
+[PhoneFormat.com](http://www.phoneformat.com)
 
 ##FAQ
-####When will you update PhoneFormat.js to the latest version of libphonenumber?
+####Is PhoneFormat.js in sync with the latest libphonenumber?
 
-Unfortunately I don't plan on updating this code very often.  More often then not PhoneFormat.js will NOT be using the [latest version](https://code.google.com/p/libphonenumber/source/browse/#svn%2Ftrunk%2Fjavascript%2Fi18n%2Fphonenumbers) of libphonenumber.  Not to worry because i'm going to show you just how easy it is for you to get PhoneFormat.js using the latest version of libphonenumber!
+More often then not PhoneFormat.js will NOT be using the [latest version](https://code.google.com/p/libphonenumber/source/browse/#svn%2Ftrunk%2Fjavascript%2Fi18n%2Fphonenumbers) of libphonenumber.
 
-The real beauty of PhoneFormat.js is that everything is compressed into just one file with some easy to use helper functions I created for you.  I'll show you how to generate PhoneFormat.js using the latest version of libphonenumber in only 3 simple steps!
+It was last synced July 30, 2014.
 
-**Note:**
-
-The current project splits the generated file so we can autogenerate modules.  But, if you are just using the plain ol' javascripts, then you should be fine.
+If this is causing you any headaches, please follow the instructions below to update the source files in /lib.
 
 **Step 1**
 
@@ -31,7 +53,7 @@ The current project splits the generated file so we can autogenerate modules.  B
 
 **Step 2**
 
-- Go to Googles [Closure Compiler Service](http://closure-compiler.appspot.com/home)</a>
+- Go to Googles [Closure Compiler Service](http://closure-compiler.appspot.com/home)
 
 **Step 3**
 
@@ -39,6 +61,13 @@ The current project splits the generated file so we can autogenerate modules.  B
 - Make sure you delete whatever text is already the textarea!
 - After you've pasted it press the **Compile** button
 - If everything works correctly, on the right side of the screen will be a freshly compiled PhoneFormat.js
+
+**Step 4**
+
+- Update these files accordingly:
+	- lib/google-libraries.js
+	- lib/phone-format-interface.js
+- Submit a PR ;)
 
 ##Questions?
 Hit me up on twitter [@albeebe](http://twitter.com/albeebe)
