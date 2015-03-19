@@ -20,20 +20,20 @@
 | exampleMobileNumber          	| countryCode : string                       	| phoneFormat.exampleMobileNumber(countryCode);                            	|   	|   	|
 | cleanPhone                   	| phoneNumber : string                       	| phoneFormat.cleanPhone(validPhoneNumber);                                	|   	|   	|
 | countryCodeToName            	| countryCode : string                       	|                                                                          	|   	|   	|
-  
+
 ##Install
 
 All files for usage are in the /dist directory.
 
-- **Amd**: 
+- **Amd**:
 	- phone-format-amd.js or phone-format-amd.min.js
-- **Exports**: 
+- **Exports**:
 	- phone-format-exports.js or phone-format-amd.min.js
-- **Global**: 
+- **Global**:
 	- phone-format-global.js or phone-format-global.min.js
-- **Original Blend**: 
+- **Original Blend**:
 	- phone-format.js or phone-format.min.js
-	
+
 
 ##DEMO
 [PhoneFormat.com](http://www.phoneformat.com)
@@ -70,4 +70,10 @@ If this is causing you any headaches, please follow the instructions below to up
 - Submit a PR ;)
 
 ##Questions?
-Hit me up on twitter [@albeebe](http://twitter.com/albeebe)
+**Ping us via Twitter**
+
+- [@sturdynut](http://twitter.com/sturdynut)
+- [@albeebe](http://twitter.com/albeebe)
+
+
+This project was created by [@albeebe](http://twitter.com/albeebe).
