@@ -1,10 +1,23 @@
 #PhoneFormat.js
 
-
 ####**A javascript phone formatter**
 
+##Install
+
+All files for usage are in the /dist directory.
+
+- **Amd**:
+  - phone-format-amd.js or phone-format-amd.min.js
+- **Exports**:
+  - phone-format-exports.js or phone-format-amd.min.js
+- **Global**:
+  - phone-format-global.js or phone-format-global.min.js
+- **Original Blend**:
+  - phone-format.js or phone-format.min.js
 
 
+##DEMO
+[PhoneFormat.com](http://www.phoneformat.com)
 
 ##API
 
@@ -21,22 +34,6 @@
 | cleanPhone                   	| phoneNumber : string                       	| phoneFormat.cleanPhone(validPhoneNumber);                                	|   	|   	|
 | countryCodeToName            	| countryCode : string                       	|                                                                          	|   	|   	|
 
-##Install
-
-All files for usage are in the /dist directory.
-
-- **Amd**:
-	- phone-format-amd.js or phone-format-amd.min.js
-- **Exports**:
-	- phone-format-exports.js or phone-format-amd.min.js
-- **Global**:
-	- phone-format-global.js or phone-format-global.min.js
-- **Original Blend**:
-	- phone-format.js or phone-format.min.js
-
-
-##DEMO
-[PhoneFormat.com](http://www.phoneformat.com)
 
 ##FAQ
 ####Is PhoneFormat.js in sync with the latest libphonenumber?
