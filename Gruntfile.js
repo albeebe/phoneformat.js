@@ -9,7 +9,7 @@
           wrapType:'amd'
         },
         files: {
-          'dist/phone-format-amd.js': ['lib/phone-format-interface.js']
+          'dist/phone-format-amd.js': ['dist/phone-format-amd.js']
         }
       },
       exports: {
@@ -17,48 +17,53 @@
           wrapType:'exports'
         },
         files: {
-          'dist/phone-format-exports.js': ['lib/phone-format-interface.js']
+          'dist/phone-format-exports.js': ['dist/phone-format-exports.js']
         }
+      }
+    },
+
+
+    // Use replace workaroung to avoid the following error when running autowrap task
+    // Warning: Parse error on line 48:
+    // ...g.SINGLE_QUOTE_RE_=/'/g;goog.string.NULL...
+    // -----------------------^
+    // Expecting 'REGEXP_BODY', got 'STRING' Use --force to continue.
+    replace: {
+      addWorkaround: {
+        src: ['dist/phone-format-amd.js', 'dist/phone-format-exports.js'],
+        overwrite: true,
+        replacements: [{
+          from: "/'/g",
+          to: "/(')/g"
+        }]
+      },
+      removeWorkaround: {
+        src: ['dist/phone-format-amd.js', 'dist/phone-format-exports.js'],
+        overwrite: true,
+        replacements: [{
+          from: "/(')/g",
+          to: "/'/g"
+        }]
       }
     },
 
     // Concat definitions
     concat: {
-      global: {
-        src: ['lib/global-wrap-start.js', 'lib/phone-format-interface.js', 'lib/global-wrap-end.js'],
-        dest: 'dist/phone-format-global.js'
-      },
-      addGoogleLibAmd: {
-        src: ['dist/phone-format-amd.js', 'lib/google-libraries.js'],
+      amd: {
+        src: ['lib/google-libraries.js', 'lib/phone-format-interface.js'],
         dest: 'dist/phone-format-amd.js'
       },
-      addGoogleLibExports: {
-        src: ['dist/phone-format-exports.js', 'lib/google-libraries.js'],
+      exports: {
+        src: ['lib/google-libraries.js', 'lib/phone-format-interface.js'],
         dest: 'dist/phone-format-exports.js'
       },
-      addGoogleLibGlobal: {
-        src: ['dist/phone-format-global.js', 'lib/google-libraries.js'],
+      global: {
+        src: ['lib/global-wrap-start.js', 'dist/phone-format.js', 'lib/global-wrap-end.js'],
         dest: 'dist/phone-format-global.js'
       },
-      addGoogleLibOriginal: {
-        src: ['dist/phone-format.js', 'lib/google-libraries.js'],
+      original: {
+        src: ['lib/google-libraries.js', 'lib/phone-format-interface.js'],
         dest: 'dist/phone-format.js'
-      },
-      addGoogleLibAmdMin: {
-        src: ['dist/phone-format-amd.min.js', 'lib/google-libraries.js'],
-        dest: 'dist/phone-format-amd.min.js'
-      },
-      addGoogleLibExportsMin: {
-        src: ['dist/phone-format-exports.min.js', 'lib/google-libraries.js'],
-        dest: 'dist/phone-format-exports.min.js'
-      },
-      addGoogleLibGlobalMin: {
-        src: ['dist/phone-format-global.min.js', 'lib/google-libraries.js'],
-        dest: 'dist/phone-format-global.min.js'
-      },
-      addGoogleLibOriginalMin: {
-        src: ['dist/phone-format.min.js', 'lib/google-libraries.js'],
-        dest: 'dist/phone-format.min.js'
       }
     },
 
@@ -91,18 +96,14 @@
   grunt.loadNpmTasks('grunt-autowrap');
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-text-replace');
 
   grunt.registerTask('default', [
+    'concat',
+    'replace:addWorkaround', // Workaroung to avoid autowrap Parse error
     'autowrap',
-    'concat:global',
-    'uglify',
-    'concat:addGoogleLibAmd',
-    'concat:addGoogleLibExports',
-    'concat:addGoogleLibGlobal',
-    'concat:addGoogleLibOriginal',
-    'concat:addGoogleLibAmdMin',
-    'concat:addGoogleLibExportsMin',
-    'concat:addGoogleLibGlobalMin',
-    'concat:addGoogleLibOriginalMin'
+    'replace:removeWorkaround', // Workaroung to avoid autowrap Parse error
+    'uglify'
   ]);
+
 };
