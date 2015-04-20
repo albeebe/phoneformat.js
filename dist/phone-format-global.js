@@ -1,4 +1,4 @@
-;(function(window, $, jQuery, goog, i18n) {
+;(function(window) {
 
 var COMPILED = !0, goog = goog || {};
 goog.global = this;
@@ -7302,4 +7302,4 @@ window.PhoneFormat = {
   countryCodeToName: countryCodeToName
 };
 
-})(window, $, jQuery, goog, i18n);
+})(window);
