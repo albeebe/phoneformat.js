@@ -2,6 +2,7 @@
   "name": "phone-format",
   "private": true,
   "version": "1.0.1",
+  "main": "dist/phone-format-exports.js",
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-autowrap": "^0.3.0",
