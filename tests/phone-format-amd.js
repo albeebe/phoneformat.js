@@ -1,5 +1,4 @@
-;(function(window) {
-
+define(function(require, exports, module){
 var COMPILED = !0, goog = goog || {};
 goog.global = this;
 goog.isDef = function(a) {
@@ -7319,19 +7318,17 @@ function countryCodeToName(countryCode) {
     }
     return name;
 }
-
-
-window.PhoneFormat = {
-  countryForE164Number: countryForE164Number,
-  formatNumberForMobileDialing: formatNumberForMobileDialing,
-  isValidNumber: isValidNumber,
-  formatE164: formatE164,
-  formatInternational: formatInternational,
-  formatLocal: formatLocal,
-  exampleLandlineNumber: exampleLandlineNumber,
-  exampleMobileNumber: exampleMobileNumber,
-  cleanPhone: cleanPhone,
-  countryCodeToName: countryCodeToName
-};
-
-})(window);
+exports.COMPILED=COMPILED;
+exports.goog=goog;
+exports.i18n=i18n;
+exports.countryForE164Number=countryForE164Number;
+exports.formatNumberForMobileDialing=formatNumberForMobileDialing;
+exports.isValidNumber=isValidNumber;
+exports.formatE164=formatE164;
+exports.formatInternational=formatInternational;
+exports.formatLocal=formatLocal;
+exports.exampleLandlineNumber=exampleLandlineNumber;
+exports.exampleMobileNumber=exampleMobileNumber;
+exports.cleanPhone=cleanPhone;
+exports.countryCodeToName=countryCodeToName;
+});
