@@ -16,7 +16,7 @@ require.config({
 });
 
 require(
-  ['QUnit', 'jquery', '../dist/phone-format-amd', 'unit/phone-test'],
+  ['QUnit', 'jquery', 'phone-format-amd', 'unit/phone-test'],
   function (QUnit, jQuery, phoneFormat, phoneTest) {
     var defaultOptions = {
       phoneFormat: phoneFormat

@@ -23,7 +23,7 @@
     },
 
 
-    // Use replace workaroung to avoid the following error when running autowrap task
+    // Use replace workaround to avoid the following error when running autowrap task
     // Warning: Parse error on line 48:
     // ...g.SINGLE_QUOTE_RE_=/'/g;goog.string.NULL...
     // -----------------------^
@@ -89,6 +89,13 @@
         src: ['dist/phone-format.js'],
         dest: 'dist/phone-format.min.js'
       }
+    },
+
+    copy: {
+      main: {
+        src: 'dist/phone-format-amd.js',
+        dest: 'tests/phone-format-amd.js',
+      }
     }
 
   });
@@ -97,13 +104,15 @@
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-text-replace');
+  grunt.loadNpmTasks('grunt-contrib-copy');
 
   grunt.registerTask('default', [
     'concat',
     'replace:addWorkaround', // Workaroung to avoid autowrap Parse error
     'autowrap',
     'replace:removeWorkaround', // Workaroung to avoid autowrap Parse error
-    'uglify'
+    'uglify',
+    'copy'
   ]);
 
 };

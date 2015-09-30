@@ -1,13 +1,13 @@
 {
-  "name": "phone-format",
-  "private": true,
-  "version": "1.0.1",
+  "name": "phoneformat.js",
+  "version": "1.0.2",
   "main": "dist/phone-format-exports.js",
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-autowrap": "^0.3.0",
     "grunt-cli": "~0.1.13",
     "grunt-contrib-concat": "^0.5.1",
+    "grunt-contrib-copy": "^0.8.1",
     "grunt-contrib-uglify": "^0.8.0",
     "grunt-text-replace": "^0.4.0",
     "jquery": "^2.1.3",
