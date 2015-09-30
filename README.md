@@ -7,6 +7,9 @@
 ### via Bower
 `bower install phoneformat.js`
 
+### via NPM
+`npm install phoneformat.js`
+
 All files for usage are in the /dist directory.
 
 - **Amd**:

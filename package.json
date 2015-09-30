@@ -1,6 +1,5 @@
 {
-  "name": "phone-format",
-  "private": true,
+  "name": "phoneformat.js",
   "version": "1.0.2",
   "main": "dist/phone-format-exports.js",
   "devDependencies": {
