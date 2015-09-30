@@ -4,6 +4,9 @@
 
 ##Install
 
+### via Bower
+`bower install phoneformat.js`
+
 All files for usage are in the /dist directory.
 
 - **Amd**:
@@ -14,7 +17,6 @@ All files for usage are in the /dist directory.
   - phone-format-global.js or phone-format-global.min.js
 - **Original Blend**:
   - phone-format.js or phone-format.min.js
-
 
 ##DEMO
 [PhoneFormat.com](http://www.phoneformat.com)
