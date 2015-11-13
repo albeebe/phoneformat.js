@@ -37,7 +37,7 @@ All files for usage are in the /dist directory.
 | exampleLandlineNumber        	| countryCode : string                       	| phoneFormat.exampleLandlineNumber(countryCode);                          	|   	|   	|
 | exampleMobileNumber          	| countryCode : string                       	| phoneFormat.exampleMobileNumber(countryCode);                            	|   	|   	|
 | cleanPhone                   	| phoneNumber : string                       	| phoneFormat.cleanPhone(validPhoneNumber);                                	|   	|   	|
-| countryCodeToName            	| countryCode : string                       	|                                                                          	|   	|   	|
+| countryCodeToName            	| countryCode : string                       	| phoneFormat.countryCodeToName(countryCode);                              	|   	|   	|
 
 
 ##FAQ
