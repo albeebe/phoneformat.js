@@ -1,8 +1,8 @@
-#PhoneFormat.js
+# PhoneFormat.js
 
-####**A javascript phone formatter**
+#### A javascript phone formatter
 
-##Install
+## Install
 
 ### via Bower
 `bower install phoneformat.js`
@@ -21,10 +21,10 @@ All files for usage are in the /dist directory.
 - **Original Blend**:
   - phone-format.js or phone-format.min.js
 
-##DEMO
+## DEMO
 [PhoneFormat.com](http://www.phoneformat.com)
 
-##API
+## API
 
 | Function                     	| Parameters                                 	| Example                                                                  	|   	|   	|
 |------------------------------	|--------------------------------------------	|--------------------------------------------------------------------------	|---	|---	|
@@ -40,8 +40,9 @@ All files for usage are in the /dist directory.
 | countryCodeToName            	| countryCode : string                       	| phoneFormat.countryCodeToName(countryCode);                              	|   	|   	|
 
 
-##FAQ
-####Is PhoneFormat.js in sync with the latest libphonenumber?
+## FAQ
+
+**Is PhoneFormat.js in sync with the latest libphonenumber?**
 
 More often then not PhoneFormat.js will NOT be using the [latest version](https://code.google.com/p/libphonenumber/source/browse/#svn%2Ftrunk%2Fjavascript%2Fi18n%2Fphonenumbers) of libphonenumber.
 
@@ -49,34 +50,33 @@ It was last synced v8.3.3
 
 If this is causing you any headaches, please follow the instructions below to update the source files in /lib.
 
-**Step 1**
+  * Step 1
 
-- Copy to your clipboard, the contents of [closure.txt](https://github.com/albeebe/phoneformat.js/blob/master/closure.txt) at the top of this page
+    * Copy to your clipboard, the contents of [closure.txt](https://github.com/albeebe/phoneformat.js/blob/master/closure.txt) at the top of this page
 
-**Step 2**
+  * Step 2
 
-- Go to Googles [Closure Compiler Service](http://closure-compiler.appspot.com/home)
+    * Go to Googles [Closure Compiler Service](http://closure-compiler.appspot.com/home)
 
-**Step 3**
+  * Step 3
 
-- Paste the contents of [closure.txt](https://github.com/albeebe/phoneformat.js/blob/master/closure.txt) into the big textarea on the left side of the screen under the **Compile** button.
-- Make sure you delete whatever text is already the textarea!
-- After you've pasted it press the **Compile** button
-- If everything works correctly, on the right side of the screen will be a freshly compiled google-libraries.js
+    * Paste the contents of [closure.txt](https://github.com/albeebe/phoneformat.js/blob/master/closure.txt) into the big textarea on the left side of the screen under the **Compile** button.
+    * Make sure you delete whatever text is already the textarea!
+    * After you've pasted it press the **Compile** button
+    * If everything works correctly, on the right side of the screen will be a freshly compiled google-libraries.js
 
-**Step 4**
+  * Step 4
 
-- Update these files accordingly:
-    - lib/google-libraries.js
-    - lib/phone-format-interface.js
-- Use Grunt to re-pack files
-- Submit a PR ;)
+    * Update these files accordingly:
+        * lib/google-libraries.js
+        * lib/phone-format-interface.js
+    * Use Grunt to re-pack files
+    * Submit a PR ;)
 
-##Questions?
-**Ping us via Twitter**
+## Questions?
 
-- [@sturdynut](http://twitter.com/sturdynut)
-- [@albeebe](http://twitter.com/albeebe)
+* [@sturdynut](http://twitter.com/sturdynut)
+* [@albeebe](http://twitter.com/albeebe)
 
 
 This project was created by [@albeebe](http://twitter.com/albeebe).
