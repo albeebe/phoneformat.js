@@ -45,7 +45,7 @@ All files for usage are in the /dist directory.
 
 More often then not PhoneFormat.js will NOT be using the [latest version](https://code.google.com/p/libphonenumber/source/browse/#svn%2Ftrunk%2Fjavascript%2Fi18n%2Fphonenumbers) of libphonenumber.
 
-It was last synced October 19, 2015.
+It was last synced v8.3.3
 
 If this is causing you any headaches, please follow the instructions below to update the source files in /lib.
 
@@ -62,13 +62,14 @@ If this is causing you any headaches, please follow the instructions below to up
 - Paste the contents of [closure.txt](https://github.com/albeebe/phoneformat.js/blob/master/closure.txt) into the big textarea on the left side of the screen under the **Compile** button.
 - Make sure you delete whatever text is already the textarea!
 - After you've pasted it press the **Compile** button
-- If everything works correctly, on the right side of the screen will be a freshly compiled PhoneFormat.js
+- If everything works correctly, on the right side of the screen will be a freshly compiled google-libraries.js
 
 **Step 4**
 
 - Update these files accordingly:
-	- lib/google-libraries.js
-	- lib/phone-format-interface.js
+    - lib/google-libraries.js
+    - lib/phone-format-interface.js
+- Use Grunt to re-pack files
 - Submit a PR ;)
 
 ##Questions?
