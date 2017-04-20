@@ -21,9 +21,6 @@ All files for usage are in the /dist directory.
 - **Original Blend**:
   - phone-format.js or phone-format.min.js
 
-## DEMO
-[PhoneFormat.com](http://www.phoneformat.com)
-
 ## API
 
 | Function                     	| Parameters                                 	| Example                                                                  	|   	|   	|
