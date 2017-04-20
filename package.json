@@ -14,6 +14,7 @@
     "qunit": "^0.7.5"
   },
   "scripts": {
-    "test": "grunt travis --verbose"
+    "test": "grunt travis --verbose",
+    "build": "grunt"
   }
 }
